@@ -2,99 +2,538 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rania Asghar | Aspiring Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Rania<span>.</span></a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
 
-<header>
-    <h1>Rania Asghar</h1>
-    <p>Aspiring Web Developer | Software Engineering Student</p>
-</header>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Rania <span class="text-highlight">Asghar</span></h1>
+                <h2 class="hero-subtitle">Aspiring Full Stack Developer</h2>
+                <p class="hero-description">
+                    Software Engineering student passionate about creating clean, functional, 
+                    and user-friendly web applications. Currently expanding my skills in modern web technologies.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-filename">portfolio.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code class="language-javascript">
+<span class="code-keyword">const</span> rania = {
+    <span class="code-property">name</span>: <span class="code-string">'Rania Asghar'</span>,
+    <span class="code-property">role</span>: <span class="code-string">'Web Developer'</span>,
+    <span class="code-property">focus</span>: [<span class="code-string">'Frontend'</span>, <span class="code-string">'Responsive Design'</span>],
+    <span class="code-property">technologies</span>: [<span class="code-string">'HTML'</span>, <span class="code-string">'CSS'</span>, <span class="code-string">'JavaScript'</span>],
+    <span class="code-property">learning</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>]
+};
 
-<section>
-    <h2>Introduction</h2>
-    <p>
-        I am a passionate web developer with a strong interest in front-end and
-        back-end technologies. My ambition is to become a full-stack developer
-        and work on impactful software solutions.
-    </p>
-</section>
+<span class="code-function">function</span> <span class="code-function-name">buildFuture</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">'Full Stack Developer'</span>;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<section>
-    <h2>Background</h2>
-    <ul>
-        <li>Bachelor’s in Software Engineering (In Progress)</li>
-        <li>HTML, CSS, JavaScript Certification</li>
-        <li>Basic Python & Node.js Training</li>
-    </ul>
-</section>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-highlight">Me</span></h2>
+                <p class="section-subtitle">My journey into web development</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>From Curiosity to Code</h3>
+                    <p>
+                        I discovered my passion for web development during my software engineering studies. 
+                        What started as an academic requirement quickly became a personal interest as I 
+                        realized the power of creating digital experiences from scratch.
+                    </p>
+                    <p>
+                        I'm currently focused on mastering front-end development while exploring back-end 
+                        technologies. My goal is to become a well-rounded developer who can tackle any 
+                        aspect of web development.
+                    </p>
+                    <div class="education">
+                        <h4>Education</h4>
+                        <div class="education-item">
+                            <div class="edu-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="edu-details">
+                                <h5>Bachelor of Software Engineering</h5>
+                                <p class="edu-meta">In Progress | Expected 2026</p>
+                                <p>Currently studying core software engineering principles, algorithms, 
+                                and web development fundamentals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Self-Taught Skills</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Learning Mindset</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Personal Portfolio Website</strong><br>
-            Role: Front-end Developer<br>
-            Technologies: HTML, CSS<br>
-            Outcome: Responsive personal website
-        </li>
-        <li>
-            <strong>To-Do List Application</strong><br>
-            Role: Full Stack (Frontend + Logic)<br>
-            Technologies: HTML, CSS, JavaScript<br>
-            Outcome: Task management app using local storage
-        </li>
-    </ul>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-highlight">Projects</span></h2>
+                <p class="section-subtitle">Hands-on learning through building</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="image-placeholder portfolio-img">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website to showcase my skills and projects. Features clean design, smooth animations, and mobile responsiveness.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fas fa-user"></i>
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-code"></i>
+                                <span>Frontend Focus</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5 & CSS3</li>
-        <li>JavaScript</li>
-        <li>Basic Node.js</li>
-        <li>Git & GitHub</li>
-    </ul>
-</section>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="image-placeholder todo-img">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do List Application</h3>
+                        <p>A task management app with add, edit, delete, and mark-as-complete functionality using local storage for data persistence.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fas fa-user"></i>
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-code"></i>
+                                <span>DOM Manipulation</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Experience</h2>
-    <p>
-        Academic projects and practice-based learning in web development,
-        focusing on clean UI and functionality.
-    </p>
-</section>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="image-placeholder weather-img">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>A weather application that fetches data from a weather API and displays current conditions and forecasts for any city.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fas fa-user"></i>
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-code"></i>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Testimonials</h2>
-    <p>Available upon request</p>
-</section>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="image-placeholder calculator-img">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>A functional calculator with basic arithmetic operations, clear functionality, and responsive design.</p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fas fa-user"></i>
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-code"></i>
+                                <span>Logic Building</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-    <h2>Blog / Articles</h2>
-    <p>
-        <a href="#">Coming Soon</a>
-    </p>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-highlight">Skills</span></h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Core Technologies
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                            <div class="skill-percent">95%</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <div class="skill-percent">90%</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Completed multiple web development projects</li>
-        <li>Active learner in modern web technologies</li>
-    </ul>
-</section>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-paint-brush"></i>
+                        Tools & Libraries
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <div class="skill-percent">80%</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Bootstrap</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <div class="skill-percent">75%</div>
+                        </div>
+                    </div>
+                </div>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: rania@example.com</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/raniaasghar</a></p>
-</section>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-rocket"></i>
+                        Currently Learning
+                    </h3>
+                    <div class="learning-list">
+                        <div class="learning-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="learning-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="learning-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="learning-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2026 Rania Asghar</p>
-</footer>
+    <!-- Learning Journey -->
+    <section class="section journey-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning <span class="text-highlight">Journey</span></h2>
+                <p class="section-subtitle">My path to becoming a developer</p>
+            </div>
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor's in Software Engineering</h3>
+                        <p>Studying core computer science concepts, algorithms, and software development methodologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Web Development Fundamentals</h3>
+                        <p>Completed HTML, CSS, and JavaScript certifications through online platforms and self-study.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Practical Project Building</h3>
+                        <p>Started building portfolio projects to apply theoretical knowledge and gain hands-on experience.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Future Goals</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Planning to expand skills into React, Node.js, and database management to become a full-stack developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's <span class="text-highlight">Connect</span></h2>
+                <p class="section-subtitle">I'm open to learning opportunities and collaborations</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:rania@example.com">rania@example.com</a>
+                            <p>Feel free to reach out for any opportunities</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Available for Remote Work</p>
+                            <p>Open to opportunities worldwide</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Status</h4>
+                            <p>Student & Aspiring Developer</p>
+                            <p>Currently building my skills and portfolio</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Rania<span>.</span></a>
+                    <p class="footer-tagline">Building my future, one project at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Rania Asghar. All rights reserved.</p>
+                <p class="footer-quote">"The only way to learn programming is by writing programs."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
